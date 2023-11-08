@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+namespace LibreriaDischi
+{
+    class Brani
+    {
+        public int Codice { get; set; }
+        public string Titolo { get; set; }
+        public string Genere { get; set; }
+        public string Durata { get; set; }
+
+
+		public override string ToString()
+        {
+            return $"{Codice} , {Titolo} , {Genere} {Durata}";
+
+        }
+		public List<Brani> ListaBrani { get; set; } = new List<Brani>();
+	}
+}
